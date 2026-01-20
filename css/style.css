@@ -151,16 +151,9 @@ section h2 {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2.5rem 1rem;
-  color: var(--text-muted);
-  border-top: 1px solid var(--border);
-  background: var(--bg-panel);
-}
+/* Contact */
 
-footer a {
+contact a {
   color: var(--text-main);
   text-decoration: none;
   font-weight: 500;
@@ -169,7 +162,7 @@ footer a {
   transition: color 0.25s ease;
 }
 
-footer a::after {
+contact a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -186,12 +179,21 @@ footer a::after {
   transition: transform 0.25s ease;
 }
 
-footer a:hover {
+contact a:hover {
   color: var(--accent);
 }
 
-footer a:hover::after {
+contact a:hover::after {
   transform: scaleX(1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  background: var(--bg-panel);
 }
 
 /* Misc */
