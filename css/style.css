@@ -7,13 +7,13 @@
 
 /* Colors */
 :root {
-  --bg-main: #0f172a;
-  --bg-panel: #111827;
-  --bg-card: #1f2933;
+  --bg-main: #27292b;
+  --bg-panel: #27292b;
+  --bg-card: #1f3325;
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
-  --accent: #38bdf8;
-  --border: #334155;
+  --accent: #38f848;
+  --border: #33553f;
 }
 
 /* Page layout */
