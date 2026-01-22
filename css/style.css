@@ -36,6 +36,18 @@ body {
   line-height: 1.6;
 }
 
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Headers */
 header {
   padding: 3rem 1.5rem;
