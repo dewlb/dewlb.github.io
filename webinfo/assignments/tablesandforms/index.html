@@ -12,15 +12,15 @@
       
     <h2>Contact Information</h2>
       <label for="inName">Name:</label>
-      <input type="text" name="inName" id="inName"> <br>
+      <input type="text" name="inName" id="inName" required> <br>
       <label for="inPhone">Phone:</label>
-      <input type="phone" name="inPhone" id="inPhone"> <br>
+      <input type="phone" name="inPhone" id="inPhone" required> <br>
       <label for="inEmail">Email:</label>
-      <input type="email" name="inEmail" id="inEmail">
+      <input type="email" name="inEmail" id="inEmail" required>
 
     <h2>Select Pizza Size</h2>
       <label for="pizzaSize">Pizza Size:</label>
-      <select name="pizzaSize" id="pizzaSize">
+      <select name="pizzaSize" id="pizzaSize" required>
         <option>--Select Size--</option>
         <option>Small</option>
         <option>Medium</option>
@@ -28,9 +28,9 @@
       </select>
 
     <h2>Select Sauce</h2>
-      <input type="radio" name="sauce"><label>Marinara</label><br>
-      <input type="radio" name="sauce"><label>Ranch</label><br>
-      <input type="radio" name="sauce"><label>No Sauce</label><br>
+      <input type="radio" name="sauce" required><label>Marinara</label><br>
+      <input type="radio" name="sauce" required><label>Ranch</label><br>
+      <input type="radio" name="sauce" required><label>No Sauce</label><br>
 
     <h2>Select Toppings</h2>
       <input type="checkbox" name="toppings"><label>Pepperoni</label>
