@@ -20,11 +20,11 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 200px;
+  font-size: 100px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 25px;
 }
 
 table {
@@ -36,16 +36,16 @@ th {
   background: gray;
   border: 1px solid black;
   border-collapse: collapse;
-  margin: 30px;
-  padding: 30px;
+  margin: 15px;
+  padding: 15px;
 }
 
 td {
   background: white;
   border: 1px solid black;
   border-collapse: collapse;
-  margin: 30px;
-  padding: 30px;
+  margin: 15px;
+  padding: 15px;
 }
 
 ol {
