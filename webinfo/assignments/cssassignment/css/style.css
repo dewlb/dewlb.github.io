@@ -19,3 +19,11 @@ h1 {
   text-align: center;
   size: 50px;
 }
+
+table {
+  border: 1px solid black;
+}
+
+th {
+  background: gray;
+}
