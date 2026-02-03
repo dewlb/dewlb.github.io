@@ -20,11 +20,11 @@ body {
 
 h1 {
   text-align: center;
-  size: 400px;
+  font-size: 200px;
 }
 
 h2 {
-  size: 50px;
+  font-size: 50px;
 }
 
 table {
