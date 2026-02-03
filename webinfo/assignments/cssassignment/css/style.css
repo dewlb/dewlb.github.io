@@ -3,13 +3,14 @@ body {
 }
 
 .greenbox {
-  background: #000000;
+  background: #FFFFFF;
   border: 2px solid green;
 }
 
 .bluebox {
   background: #00008B;
   border: 1px solid black;
+  color: white;
 }
 
 h1 {
