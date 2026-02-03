@@ -23,6 +23,10 @@ h1 {
   size: 100px;
 }
 
+h2 {
+  size: 50px;
+}
+
 table {
   border: 1px solid black;
   border-collapse: collapse;
