@@ -30,10 +30,22 @@ table {
 
 th {
   background: gray;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  background: white;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 ol {
   list-style-type: decimal-leading-zero;
+}
+
+a {
+  color: blue;
 }
 
 w3 {
