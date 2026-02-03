@@ -22,8 +22,13 @@ h1 {
 
 table {
   border: 1px solid black;
+  border-collapse: collapse;
 }
 
 th {
   background: gray;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
 }
