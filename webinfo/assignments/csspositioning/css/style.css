@@ -72,7 +72,7 @@ main > h1 {
 
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 70px 80px;
   align-items: start;
 }
@@ -99,6 +99,7 @@ main > h1 {
   background: lightblue;
   font-size: 40px;
   border: 1px solid black;
+  padding: 20px 35px;
 }
 
 footer {
