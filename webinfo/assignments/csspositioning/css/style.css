@@ -74,3 +74,17 @@ main > h1 {
   display: grid;
   align-items: start;
 }
+
+#thanks {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background: lightblue;
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+footer {
+  margin-top: 80px;
+}
