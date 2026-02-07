@@ -33,16 +33,16 @@ main > header {
 }
 
 #brand {
+  margin: 0;
   height: 100px;
   background: red;
-  font-size: 30px;
-  display: flex;
+  font-size: 50px;
   text-align: center;
   top: 0;
 }
 
 header p {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
 }
 
