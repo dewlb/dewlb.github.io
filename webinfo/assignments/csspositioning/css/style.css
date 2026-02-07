@@ -53,10 +53,12 @@ main > header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 #topNav button {
+  flex: 1;
   background: blue;
   color: #ffffff;
   font-size: 28px;
