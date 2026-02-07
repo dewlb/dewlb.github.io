@@ -33,11 +33,13 @@ main > header {
 }
 
 #brand {
+  margin: 0;
   height: 100px;
   background: red;
   align-items: center;
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
+  text-align: center;
 }
 
 #topNav {
