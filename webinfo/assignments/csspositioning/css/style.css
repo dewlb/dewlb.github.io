@@ -17,10 +17,11 @@ body {
   text-align: center;
 }
 
-#jumpMenu a {
+#jumpMenu button {
   font-size: 20px;
   text-align: center;
   color: blue;
+  font-color: white;
   display: block;
 }
 
