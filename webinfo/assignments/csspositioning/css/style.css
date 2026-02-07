@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 
-#jumpMenu button {
+#jumpMenu a {
   font-size: 20px;
   text-align: center;
   color: blue;
@@ -50,7 +50,7 @@ main > header {
   display: flex;
 }
 
-#topNav a {
+#topNav button {
   background: blue;
   color: #ffffff;
   font-size: 28px;
