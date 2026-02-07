@@ -1,1 +1,51 @@
+body {
+  background: #ffffff;
+  margin: 0;
+}
 
+#jumpMenu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: gold;
+  top: 0;
+  left: 0;
+}
+
+#jumpMenu h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#jumpMenu a {
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+}
+
+main > header {
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: calc(100% - 300px);
+}
+
+#brand {
+  height: 100px;
+  background: red;
+  align-items: center;
+  font-size: 50px;
+}
+
+#topNav {
+  height: 60px;
+  background: #000000;
+  align-items: center;
+}
+
+#topNav a {
+  background: blue;
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+}
