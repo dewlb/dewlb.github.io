@@ -72,7 +72,23 @@ main > h1 {
 
 #container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px 80px;
   align-items: start;
+}
+
+#container article h2 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+#container article p {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+#container article {
+  scroll-margin-top: 200px;
 }
 
 #thanks {
