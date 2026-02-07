@@ -33,7 +33,6 @@ main > header {
 }
 
 #brand {
-  margin: 0;
   height: 100px;
   background: red;
   font-size: 30px;
@@ -42,7 +41,7 @@ main > header {
   top: 0;
 }
 
-#header p {
+header p {
   font-size: 30px;
   text-align: center;
 }
