@@ -48,6 +48,8 @@ main > header {
   background: #000000;
   align-items: center;
   display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
 }
 
 #topNav button {
