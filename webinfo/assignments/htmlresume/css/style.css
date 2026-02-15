@@ -22,6 +22,8 @@ h2 {
   margin-top: 28px;
   margin-bottom: 10px;
   text-align: center;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #dddddd;
 }
 
 p { margin-top: 6px; }
@@ -36,19 +38,30 @@ li { margin-top: 6px; }
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* Mobile specific */
 @media (max-width: 480px) {
   main { padding: 20px 14px; }
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.1rem; }
 }
 
+/* Desktop specific */
 @media (min-width: 1000px) {
-  main {
-    max-width: 980px;
-    padding: 48px 56px;
+  body {
+    background: #f6f6f6;
   }
 
-  p { margin-top: 4px; }
+  main {
+    background: #fff;
+    padding: 48px 56px;
+    margin: 48px auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+  }
+
+  h2 {
+    text-align: left;
+  }
 }
 
 section a {
