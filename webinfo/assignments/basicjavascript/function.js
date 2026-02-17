@@ -86,17 +86,17 @@ function loadCar(num) {
   let src = null;
 
   // Our car objects are located in the footer already? so we can just reference those here
-  if (num === 1) src = window.carObject1;
-  if (num === 2) src = window.carObject2;
-  if (num === 3) src = window.carObject3;
+  if (which === 1) src = carObject1;
+  else if (which === 2) src = carObject2;
+  else if (which === 3) src = carObject3;
 
   // If still null we can end early
   if (!src) return;
 
   // Here we load the elements of the selected car, if present
-  document.getElementById("carType").value = src.cType ?? "";
-  document.getElementById("carMPG").value = src.cMPG ?? "";
-  document.getElementById("carColor").value = src.carColor ?? "";
+  document.getElementById("carType").value = src.cType;
+  document.getElementById("carMPG").value = src.cMPG;
+  document.getElementById("carColor").value = src.carColor;
 }
 
 // Style implementation
