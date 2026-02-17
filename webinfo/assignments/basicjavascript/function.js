@@ -96,7 +96,7 @@ function loadCar(num) {
   // Here we load the elements of the selected car, if present
   document.getElementById("carType").value = src.cType;
   document.getElementById("carMPG").value = src.cMPG;
-  document.getElementById("carColor").value = src.carColor;
+  document.getElementById("carColor").value = src.cColor;
 }
 
 // Style implementation
