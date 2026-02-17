@@ -25,28 +25,28 @@ function runForLoop() {
   // Here I use two for loop options, for if our counter is a negative number. I think this is whats desired?
   if (val >= 0) {
     for (let i = 0; i <= val; i++) { 
-      out.push(i) ;
+      output.push(i) ;
     }
   } else {
     for (let i = 0; i >= val; i--) { 
-      out.push(i);
+      output.push(i);
     }
   }
 
   // Output results with styling
-  document.getElementById("forLoopResult").textContent = out.join(", ");
+  document.getElementById("forLoopResult").textContent = output.join(", ");
 }
 
 // Odd numbers implementation
 function showOddNumbers() {
   const val = getCounter();
-  const out = [];
+  const output = [];
 
   // Slight base case adjustment
-  if (n >= 1) {
+  if (val >= 1) {
     for (let i = 1; i <= val; i++) {
       // Check if odd number with mod
-      if (i % 2 !== 0) out.push(i);
+      if (i % 2 !== 0) output.push(i);
     }
   }
 
@@ -57,18 +57,18 @@ function showOddNumbers() {
 // Array implementation
 function addMultiplesToArray() {
   const val = getCounter();
-  const arr = [];
+  const output = [];
 
   // Base case: empty unless 5 or greater
-  if (n >= 5) {
+  if (val >= 5) {
     // We work this one backwards for "reverse" order
-    for (let i = n; i >= 5; i--) {
-      if (i % 5 === 0) arr.push(i);
+    for (let i = val; i >= 5; i--) {
+      if (i % 5 === 0) output.push(i);
     }
   }
 
   // Print the array at the end
-  console.log(arr);
+  console.log(output);
 }
 
 // Output formatting for car data
@@ -96,12 +96,11 @@ function loadCar(num) {
   // Here we load the elements of the selected car, if present
   document.getElementById("carType").value = src.cType ?? "";
   document.getElementById("carMPG").value = src.cMPG ?? "";
-  document.getElementById("carColor").value = src.cColor ?? "";
+  document.getElementById("carColor").value = src.carColor ?? "";
 }
 
 // Style implementation
 function changeColor(num) {
-
   // Here is the id specified in the html, so we fetch this
   const p = document.getElementById("styleParagraph");
 
