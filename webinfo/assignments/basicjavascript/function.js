@@ -86,9 +86,9 @@ function loadCar(num) {
   let src = null;
 
   // Our car objects are located in the footer already? so we can just reference those here
-  if (which === 1) src = carObject1;
-  else if (which === 2) src = carObject2;
-  else if (which === 3) src = carObject3;
+  if (num === 1) src = carObject1;
+  else if (num === 2) src = carObject2;
+  else if (num === 3) src = carObject3;
 
   // If still null we can end early
   if (!src) return;
