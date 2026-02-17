@@ -51,7 +51,7 @@ function showOddNumbers() {
   }
 
   // Same output as above
-  document.getElementById("oddNumberResult").textContent = out.join(", ");
+  document.getElementById("oddNumberResult").textContent = output.join(", ");
 }
 
 // Array implementation
@@ -86,9 +86,9 @@ function loadCar(num) {
   let src = null;
 
   // Our car objects are located in the footer already? so we can just reference those here
-  if (num === 1) src = window.carObject1;
-  if (num === 2) src = window.carObject2;
-  if (num === 3) src = window.carObject3;
+  if (num === 1) src = footer.carObject1;
+  if (num === 2) src = footer.carObject2;
+  if (num === 3) src = footer.carObject3;
 
   // If still null we can end early
   if (!src) return;
