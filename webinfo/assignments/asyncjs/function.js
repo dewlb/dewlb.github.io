@@ -23,7 +23,7 @@ async function loadPokemon() {
     data = await response.json();
 
     // Store in cache (since not in cache at this point)
-    localStorage.setItem(key, JSON.stringify(data));
+    localStorage.setItem(id, JSON.stringify(data));
     console.log("Fetched from API");
   }
 
