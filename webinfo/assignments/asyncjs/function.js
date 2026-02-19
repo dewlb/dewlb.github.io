@@ -1,5 +1,18 @@
 let team = [];
 
+// Had some GPT help with this onload section, again nothing crazy and just a visual tool for styling
+// Loads "slots" to be filled by the team
+window.onload = function() {
+  const teamDiv = document.getElementById("team");
+
+  for (let i = 0; i < 6; i++) {
+    const slot = document.createElement("div");
+    slot.className = "team-slot";
+    slot.textContent = "Empty";
+    teamDiv.appendChild(slot);
+  }
+};
+
 // Load function
 async function loadPokemon() {
   const name = document.getElementById("pokeInput").value.toLowerCase();
@@ -93,16 +106,15 @@ function addToTeam() {
 
   const moves = [m1.value, m2.value, m3.value, m4.value];
 
-  // Add to our team data, to keep track of size
+  // Push to team array for length purposes (6 or less)
   team.push({ name, img, moves });
 
-  // Update the teamDiv with a card for the pokemon based on selected info
-  const card = document.createElement("div");
-  card.innerHTML = `
-    <h3>${name}</h3>
-    <img src="${img}" width="100">
-    <p>Moves: ${moves.join(", ")}</p>
-  `;
+  // Select slot the member should be added to
+  const slots = document.querySelectorAll(".team-slot");
+  const slot = slots[team.length - 1];
+
+  // Add team to the slot
+  slot.innerHTML = `<strong>${name}</strong><img src="${img}"><p>${moves.join(", ")}</p>`;
 
   // Append said card
   teamDiv.appendChild(card);
