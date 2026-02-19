@@ -1,3 +1,5 @@
+let team = [];
+
 // Load function
 async function loadPokemon() {
   const name = document.getElementById("pokeInput").value.toLowerCase();
@@ -74,23 +76,27 @@ function fillDropdown(id, moves) {
   });
 }
 
-// Add to team button implementation
+// Here is our function to add to a team
 function addToTeam() {
+
+  // Team can not be larger than 6
+  if (team.length >= 6) {
+    alert("Team is full! Maximum 6 Pokémon.");
+    return;
+  }
+
   const teamDiv = document.getElementById("team");
 
-  // Current name and image to be stored
+  // Add name and image content, and store currently selected moves
   const name = document.getElementById("pokeName").textContent;
   const img = document.getElementById("pokeImg").src;
 
-  // Whatever moves we have selected, add
-  const moves = [
-    m1.value,
-    m2.value,
-    m3.value,
-    m4.value
-  ];
+  const moves = [m1.value, m2.value, m3.value, m4.value];
 
-  // Here we create and format the team entry
+  // Add to our team data, to keep track of size
+  team.push({ name, img, moves });
+
+  // Update the teamDiv with a card for the pokemon based on selected info
   const card = document.createElement("div");
   card.innerHTML = `
     <h3>${name}</h3>
@@ -98,6 +104,7 @@ function addToTeam() {
     <p>Moves: ${moves.join(", ")}</p>
   `;
 
-  // Add to our teamDiv
+  // Append said card
   teamDiv.appendChild(card);
 }
+
