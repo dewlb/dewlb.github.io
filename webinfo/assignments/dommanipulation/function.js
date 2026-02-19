@@ -39,6 +39,5 @@ function addNewArticle() {
 
   document.getElementById("inputHeader").value = "";
   document.getElementById("inputArticle").value = "";
-  document.getElementById("newContent").style.display = "none";
 }
 
