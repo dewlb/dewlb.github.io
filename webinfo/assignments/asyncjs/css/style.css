@@ -25,7 +25,7 @@ button {
     margin-top: 20px;
     padding: 15px;
     background-color: white;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     /* Starting area initially hidden, but the function.js displays it when needed */
     display: none;
 }
@@ -41,13 +41,24 @@ select {
 
 #team {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-#team div {
+.team-slot {
+    width: 150px;
+    height: 200px;
+    border: 2px dashed #999999;
     background-color: white;
-    border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px auto;
-    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.team-slot img {
+    width: 80px;
+    margin: 5px 0;
 }
 
