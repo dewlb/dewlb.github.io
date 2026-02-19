@@ -1,1 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 6px;
+    width: 200px;
+}
+
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#pokemonArea {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* Starting area initially hidden, but the function.js displays it when needed */
+    display: none;
+}
+
+#pokeImg {
+    margin: 10px 0;
+}
+
+select {
+    margin: 5px;
+    padding: 4px;
+}
+
+#team {
+    margin-top: 20px;
+}
+
+#team div {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+    width: 250px;
+}
 
