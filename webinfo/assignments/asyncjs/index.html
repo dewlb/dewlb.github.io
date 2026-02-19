@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokemon Team Builder</title>
+  <script src="function.js">
+</head>
+<body>
+  <h1>Pokemon Team Builder</h1>
 
+  <div>
+    <input id="pokeInput" placeholder="Name or ID (1-151)" />
+    <button id="searchBtn">Submit</button>
+  </div>
+
+  <hr />
+
+  <div id="pokemonArea" style="display:none;">
+    <h2 id="pokeName"></h2>
+    <img id="pokeImg" alt="pokemon sprite" width="160" />
+    <div>
+      <audio id="pokeAudio" controls></audio>
+    </div>
+
+    <h3>Choose 4 moves</h3>
+    <select id="m1"></select>
+    <select id="m2"></select>
+    <select id="m3"></select>
+    <select id="m4"></select>
+
+    <div style="margin-top:10px;">
+      <button id="addBtn">Add to Team</button>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>Your Team (max 6)</h2>
+  <div id="team"></div>
+</body>
+</html>
