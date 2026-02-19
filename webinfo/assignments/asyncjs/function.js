@@ -22,9 +22,6 @@ async function loadPokemon() {
     // Await data
     data = await response.json();
 
-    // Log data for debug
-    console.log(data);
-
     // Store in cache (since not in cache at this point)
     localStorage.setItem(id, JSON.stringify(data));
     console.log("Fetched from API");
@@ -36,24 +33,32 @@ async function loadPokemon() {
 
 // Display function
 function displayPokemon(data) {
-  // Text display for name and id
+  // Debug log tool
+  console.log("DISPLAYING:", data);
+
+  // If hidden, show
+  const area = document.getElementById("pokemonArea");
+  if (area) area.style.display = "block";
+
+  // Text display for id and name
   document.getElementById("pokeName").textContent = "#" + data.id + " " + data.name;
 
-  // Image display - default photo
-  document.getElementById("pokeImg").src = data.sprites.front_default;
+  // Visual
+  const img = data.sprites.front_default;
+  document.getElementById("pokeImg").src = img;
 
-  // Load pokemon cry (latest)
+  // Audio
+  const audioUrl = data.cries.latest;
   const audio = document.getElementById("pokeAudio");
-  audio.src = data.cries.latest;
+  audio.src = audioUrl;
   audio.load();
 
-  // Load moves
-  const moveList = data.moves.map(m => m.move.name);
-
-  fillDropdown("m1", moveList);
-  fillDropdown("m2", moveList);
-  fillDropdown("m3", moveList);
-  fillDropdown("m4", moveList);
+  // Moves
+  const moves = data.moves.map(m => m.move.name);
+  fillDropdown("m1", moves);
+  fillDropdown("m2", moves);
+  fillDropdown("m3", moves);
+  fillDropdown("m4", moves);
 }
 
 // Function to fill dropdown values, as seen above. ChatGPT helped generate this, this one confused me a little but also was an extra addition
